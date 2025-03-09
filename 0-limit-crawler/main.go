@@ -18,7 +18,7 @@ import (
 // real crawler. It crawls until the maximum depth has reached.
 func Crawl(url string, depth int, wg *sync.WaitGroup) {
 	defer wg.Done()
-
+ 
 	if depth <= 0 {
 		return
 	}
